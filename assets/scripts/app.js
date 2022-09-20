@@ -9,7 +9,7 @@ menuToggler.addEventListener("click", () => {
     collapsibleMenu.style.maxHeight = collapsibleMenu.scrollHeight + "px";
     setTimeout(() => {
       collapsibleMenu.style.overflow = "visible";
-    }, 2000);
+    }, 300);
   } else {
     collapsibleMenu.style.maxHeight = "0px";
     collapsibleMenu.style.overflow = "hidden";

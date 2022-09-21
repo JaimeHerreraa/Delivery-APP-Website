@@ -80,10 +80,12 @@ input {
   flex-wrap: wrap;
   padding-block: 0.8rem;
 }
+.logo {
+  margin-right: 10rem;
+}
 
 .logo-image {
   min-width: 15.5rem;
-  margin-right: 10rem;
 }
 
 .menu-toggler {
@@ -458,5 +460,65 @@ section:not(.hero) .button {
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 /* !FOOTER */
+#footer {
+  text-align: center;
+  padding: 5rem 0 3rem;
+}
 
+.company-data {
+  margin-block: 2rem;
+}
+
+.logo {
+  display: inline-block;
+}
+
+.company-description {
+  margin: 2.5rem 0 1rem;
+  line-height: 3rem;
+}
+
+#footer .logo {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.footer-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 2rem;
+}
+
+.footer-group {
+  margin: 3rem 0 1rem;
+}
+
+.footer-group .list {
+  margin: inherit;
+}
+
+.footer-group .link {
+  line-height: 4rem;
+}
+
+.horizontal-line {
+  margin-block: 3rem;
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.copyright-information {
+  line-height: 2.4rem;
+}
+
+.legal-information {
+  font-weight: 500;
+  margin: 0 1.2rem;
+  transition: color 0.5s;
+}
+
+.legal-information a:hover,
+.legal-information a:focus {
+  color: var(--accent-color);
+}
 /* !MEDIA QUERIES */

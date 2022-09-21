@@ -522,3 +522,79 @@ section:not(.hero) .button {
   color: var(--accent-color);
 }
 /* !MEDIA QUERIES */
+
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 1.6rem;
+  }
+
+  .hero {
+    padding: 8rem 0 12rem;
+  }
+
+  .container {
+    max-width: 72rem;
+  }
+
+  .tagline {
+    font-size: inherit;
+  }
+
+  .main-title {
+    font-size: 3.8rem;
+  }
+
+  .button-group {
+    justify-content: flex-start;
+  }
+
+  .button {
+    width: 18rem;
+    padding: 1.8rem 2rem;
+  }
+
+  .hero .button {
+    font-size: inherit;
+  }
+
+  .hero .button-transparent {
+    width: 100%;
+  }
+
+  .play-icon-image {
+    width: 7rem;
+  }
+
+  .text-content-group,
+  .section-metadata {
+    text-align: left;
+  }
+
+  .what-we-serve .section-metadata {
+    text-align: center;
+  }
+
+  .section-title {
+    font-size: 3.2rem;
+  }
+
+  .card-group {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2.4rem;
+  }
+
+  section:not(.hero) .text-content-group {
+    margin: 10rem 0 2rem;
+  }
+
+  .download-our-app .text-content-group {
+    margin: 8rem !important;
+  }
+
+  .footer-bottom-data {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.4rem;
+  }
+}

@@ -598,3 +598,192 @@ section:not(.hero) .button {
     font-size: 1.4rem;
   }
 }
+
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 96rem;
+  }
+
+  .navbar {
+    flex-wrap: nowrap;
+  }
+
+  .menu-toggler {
+    display: none;
+  }
+
+  .collapsible-menu {
+    flex-direction: row;
+    max-height: initial !important;
+    overflow: visible !important;
+    transition: none;
+  }
+
+  .collapsible-menu > .list {
+    flex-direction: row;
+    margin: 0 auto;
+  }
+
+  .collapsible-menu .list-item {
+    margin: 0 1.6rem;
+  }
+
+  .search-box {
+    margin-top: 0;
+  }
+
+  .hero-container,
+  .home-delivery-container,
+  .download-our-app-container {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2.4rem;
+  }
+
+  .card {
+    padding: 4rem 2.6rem;
+    margin: 1rem;
+  }
+
+  .why-choose-us-container {
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  .why-choose-us .image-content-group {
+    grid-column: span 7;
+  }
+
+  .why-choose-us .text-content-group {
+    grid-column: span 5;
+  }
+
+  .home-delivery .image-content-group {
+    order: 1;
+  }
+
+  .download-our-app {
+    padding: 10rem 0;
+  }
+
+  #footer {
+    text-align: left;
+    font-size: 1.4rem;
+  }
+
+  .footer-top-data {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .company-data {
+    grid-column: span 2;
+    margin-right: 4rem;
+  }
+
+  .legal-information {
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 114rem;
+  }
+
+  .main-title {
+    font-size: 4.8rem;
+    line-height: 8.8rem;
+  }
+
+  section:not(.what-we-serve) .section-title {
+    max-width: 90%;
+  }
+
+  .card-group {
+    max-width: 95rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /*Card animation*/
+  .card {
+    position: relative;
+    z-index: 1;
+  }
+
+  .card::before,
+  .card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: inherit;
+  }
+
+  .card::before {
+    width: calc(100% + 1.5rem);
+    height: calc(100% + 1.5rem);
+    background-color: var(--accent-color);
+    transform-origin: top left;
+    transition: transform 0.25s, opacity 0.25s;
+    z-index: -2;
+    opacity: 0;
+  }
+
+  .card::after {
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-color: inherit;
+  }
+
+  .card:hover::before {
+    transform: translate(0.5rem, 0.5rem) rotate(-3deg);
+    opacity: 1;
+  }
+
+  .company-data {
+    max-width: 75%;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .container {
+    max-width: 132rem;
+  }
+
+  .main-title {
+    font-size: 7.4rem;
+  }
+
+  section:not(.hero) .text-content-group {
+    margin: 20rem 0 2rem;
+  }
+
+  .section-tagline {
+    font-size: 1.8rem;
+  }
+
+  .section-title {
+    font-size: 4rem;
+  }
+
+  .what-we-serve .section-title {
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .card {
+    padding: 5rem 2.8rem;
+    margin: 2rem;
+  }
+
+  .card-group {
+    max-width: 110rem;
+  }
+
+  .download-our-app .button {
+    padding-block: 1.8rem;
+    margin-right: 1.4rem;
+    font-weight: 600;
+  }
+}
